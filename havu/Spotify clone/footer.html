@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify footer</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            background-color: var(--grey);
+            color: aliceblue;
+            font-size: 30px;
+            width: 100%;
+            border-radius: 0.5px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .first {
+            color: white;
+            font-size: 18px;
+        }
+
+        ul li a {
+            color: white;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .item2 li a,
+        .item3 li a,
+        .item4 li a {
+            color: grey;
+            font-size: 15px;
+            margin-left: 0px;
+            /* You can adjust the size as needed */
+        }
+
+        .item5 ul {
+            list-style: none;
+            padding: 0;
+            margin: 10;
+            text-align: right;
+            /* Align list items to the right */
+        }
+
+        .item5 img {
+            width: 40px;
+        }
+
+        .item5 ul li {
+            display: inline-block;
+            margin: 2px;
+        }
+
+        .item5 ul li a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 50%;
+            /* Make the button circular */
+            background-color: #212121;
+            /* Light grey background color */
+            transition: background-color 0.3s ease;
+            /* Add transition for a smooth effect */
+        }
+
+        .item5 ul li a:hover {
+            background-color: #ccc;
+            /* Change background color on hover */
+            color: #000;
+            /* Change text color on hover */
+        }
+
+        .item5 ul li img {
+            width: 20px;
+            /* Adjust image size as needed */
+            height: auto;
+        }
+
+
+
+        @media only screen and (max-width: 700px) {
+            .item5 img {
+                width: 30px;
+
+            }
+
+            .first {
+                font-size: 16px;
+            }
+
+        }
+        .item6 p{
+            color: white;
+        }
+
+
+
+        ul li a {
+            color: white;
+            font-size: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="item2">
+            <ul>
+                <li class="first"> Company</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">For the record</a></li>
+            </ul>
+
+        </div>
+        <div class="item3">
+            <ul>
+                <li class="first"> Communities</li>
+                <li><a href="#">For Artists</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Advertising </a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Vendors</a></li>
+            </ul>
+        </div>
+        <div class="item4">
+            <ul>
+                <li class="first"> Useful Links</li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Web Player</a></li>
+                <li><a href="#">Free Mobile App</a></li>
+                <li><a href="#">Car Thing</a></li>
+
+
+            </ul>
+        </div>
+        <div class="item5">
+            <ul>
+                <li><a href="#"><img src="assets/instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="assets/twitter.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="assets/facebook.png" alt="Facebook"></a></li>
+            </ul>
+        </div>
+
+
+
+
+    </div>
+
+<div class="item6">
+    <hr>
+    <br>
+    <p>@2023 Spotify AB</p>
+</div>
+
+</body>
+
+</html>
