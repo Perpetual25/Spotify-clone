@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/*--- The header styling----*/
+
+header{
+    padding: 20px 0 20px 50px;
+}
+
+
+.logo img{
+    width: 100px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lg{
+    border: 2px solid red;
+}
+
+/*--The main styling---*/
+
+.main{
+    margin: 30px;
+    width: 700px;
+    background: #000;
+    border-radius: 5px;
+}
+
+.main h1{
+    color: white;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 10rem;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+/*--- contine with Google facebook and apple container ---*/
+ .gfa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gfa button{
+    width: 450PX;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    border-radius: 500px;
+    color: white;
+    background: transparent;
+    border: 1px solid rgb(54, 52, 52);
+
+}
+
+.gfa button img{
+    width: 25px;
+    float: left;
+    margin: 0 10px;
+}
+.gfa button span{
+    position: relative;
+    top: 3px;
+
+}
+
+.main hr{
+    margin: 35px 100px;
+    border-image: initial;
+    border-top: 1px solid rgb(41, 41, 41);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+
+/*----Email and username section----*/
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+.login form label{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+
+.login form input{
+    display: block;
+    padding: 14px;
+    width: 450px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    background: #141313;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    /* box-shadow: inherit; */
+}
+
+.switch{
+    margin: 0;
+    padding: 0;
+}
+
+.switch input[type="checkbox"] {
+    display: none;
+}
+/*--checkbox---*/
+.switch label{
+    border-radius: 50px;
+    position: relative;
+    margin: 10px 0 20px 0;
+    padding: 3px;
+    display: block;
+    cursor: pointer;
+    width: 32px;
+    height: 15px;
+    background: #4b4a4a;
+    transition: 0.3s;
+    box-sizing: border-box;
+
+}
+
+.switch label::after{
+    content: '';
+    background: #000;
+    position: absolute;
+    width: 11px;
+    height: 10px;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+
+.switch span{
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    left: 7px;
+    bottom: 11px;
+}
+
+
+.login button{
+    background-color: #1ed760;
+    height: 40px;
+    width: 450px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 32px;
+    margin: 20px 0;
+}
+
+.login a{
+    display: block;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+/** Last part***/
+.last{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.last div{
+    color: #575050;
+    margin-right: 3px;
+    margin: 10px;
+}
+
+.last a{
+    color: white;
+    text-decoration: underline;
+
+}
