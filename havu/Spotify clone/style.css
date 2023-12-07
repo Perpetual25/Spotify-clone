@@ -330,7 +330,7 @@ a {
   opacity: 0.5;
 }
 
- .preview {
+*/ .preview {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -365,7 +365,11 @@ a {
   flex-direction: column;
   margin-right: 0.5rem;
 }
-
+.perpetual::-webkit-scrollbar 
+{   width: 8px; } 
+.perpetual::-webkit-scrollbar-thumb 
+{   background-color: #888;   
+    border-radius: 4px; }
 
 /* .sidebar {
     position: fixed;
@@ -757,4 +761,3 @@ a {
   background: transparent;
   /* Make scrollbar handle transparent */
 }
-
