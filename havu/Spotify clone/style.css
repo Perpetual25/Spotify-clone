@@ -687,11 +687,11 @@ a {
   align-items: center;
 }
 
-.volume-controls {
+/* .volume-controls {
   display: flex;
   justify-content: flex-end;
   margin-right: 2rem;
-}
+} */
 
 .player-timeline {
   display: flex;
