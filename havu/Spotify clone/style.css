@@ -98,6 +98,16 @@ a {
   padding: 0.5rem 1.5rem;
 }
 
+.lib-parent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  overflow: auto;
+}
+.lib-div > span{
+  margin: 0 0 10px 0;
+}
 .flex-top {
   display: flex;
   justify-content: space-between;
