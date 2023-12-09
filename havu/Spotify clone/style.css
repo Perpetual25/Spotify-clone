@@ -54,12 +54,13 @@ a {
 .top-icons {
   display: flex;
   flex-direction: column;
-  
+  flex: 0.5;
   gap: 1.5rem;
   padding: 1rem 1.5rem;
   margin-bottom: 0.5rem;
   background-color: var(--grey);
   border-radius: 0.5rem;
+  
 }
 
 /*the same class name for the home and search icons*/
@@ -92,7 +93,7 @@ a {
 
 .library {
   border-radius: 0.5rem;
-  flex: 3;
+  flex: 2;
   overflow-y: auto;
   background-color: var(--grey);
   padding: 0.5rem 1.5rem;
