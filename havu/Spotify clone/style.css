@@ -20,7 +20,6 @@ html {
   font-family: "Nunito", sans-serif;
   background-color: var(--black);
   color: var(--white);
-  
 }
 
 /*to give a styling for every anchor tag*/
@@ -36,7 +35,6 @@ a {
   overflow: hidden;
   background-color: var(--black);
   padding: 0.5rem;
-  
 }
 
 /*the sidebar container as general and it containe 2 div in side it*/
@@ -96,6 +94,24 @@ a {
   background-color: var(--grey);
   padding: 0.5rem 1.5rem;
 }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+
+  /* Position the tooltip */
+  position: fixed;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 .lib-button {
   background-color: #ffffff;
   color: #000000;
@@ -110,7 +126,7 @@ a {
   height: 40px;
   /* transition: 1s; */
 }
-.lib-button :hover{
+.lib-button :hover {
   background-color: #fff;
   width: 200px;
 }
@@ -120,7 +136,7 @@ a {
   border-radius: 5px;
   padding: 10px;
   height: 200px;
- }
+}
 .lib-parent {
   display: flex;
   flex-direction: column;
@@ -236,7 +252,7 @@ a {
   /* background-color: #000; */
   padding: 0px 30px;
   position: sticky;
-  
+
   /* Change to sticky */
   top: 0;
   /* Specify the distance from the top */
@@ -263,7 +279,6 @@ a {
 .topbar .navbar ul {
   list-style: none;
   margin-left: -50px; /* Adjust the margin-left value as needed */
-
 }
 
 .topbar .navbar ul li {
@@ -368,7 +383,7 @@ a {
   justify-content: space-between;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 * {
   padding: 0;
@@ -377,7 +392,7 @@ a {
 
 body {
   background-color: #121212;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -392,11 +407,13 @@ a {
   flex-direction: column;
   margin-right: 0.5rem;
 }
-.perpetual::-webkit-scrollbar 
-{   width: 8px; } 
-.perpetual::-webkit-scrollbar-thumb 
-{   background-color: #888;   
-    border-radius: 4px; }
+.perpetual::-webkit-scrollbar {
+  width: 8px;
+}
+.perpetual::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
 
 /* .sidebar {
     position: fixed;
@@ -473,10 +490,10 @@ a {
   margin-left: 0.5rem;
   /* Adjust as needed */
   margin-bottom: 100px;
-  
+
   width: 100%;
- height: 500px;
- overflow: auto;
+  height: 500px;
+  overflow: auto;
   /* Occupy the full height of the container */
 }
 
@@ -502,7 +519,6 @@ a {
 .topbar .navbar {
   display: flex;
   align-items: center;
-  
 }
 
 .topbar .navbar ul {
@@ -574,8 +590,6 @@ a {
 .spotify-playlists .list .item:hover {
   background-color: #252525;
 }
-
-
 
 .spotify-playlists .list .item img {
   width: 100%;
