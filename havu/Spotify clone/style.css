@@ -16,7 +16,7 @@ html {
   margin: 0rem;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   font-family: "Nunito", sans-serif;
   background-color: var(--black);
   color: var(--white);
@@ -52,7 +52,7 @@ a {
 .top-icons {
   display: flex;
   flex-direction: column;
-  flex: 0.8;
+  flex: 0.57;
   gap: 1.5rem;
   padding: 1rem 1.5rem;
   margin-bottom: 0.5rem;
@@ -60,6 +60,7 @@ a {
   border-radius: 0.5rem;
   
 }
+
 
 /*the same class name for the home and search icons*/
 .link-flex {
@@ -94,12 +95,27 @@ a {
 
 .library {
   border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items:flex-start; */
   flex: 2;
   overflow-y: auto;
   background-color: var(--grey);
-  padding: 0.5rem 1.5rem;
+  padding: 0.7rem 1.5rem;
+}
+.parent{
+  display: flex;
+  flex-direction: column;
 }
 
+.first_list{
+  display: flex;
+  list-style: none;
+font-size: 0.6875rem;
+font-weight: 400;
+  gap: 24px;
+  color: #cfbfbf;
+}
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
@@ -136,25 +152,34 @@ a {
   width: 200px;
 }
 .play-div {
-  background-color: #5e5e5e;
+  background-color: var(--light-grey);
   margin: 10px 0;
+  margin-left: 0;
   border-radius: 5px;
   padding: 10px;
-  height: 200px;
+  height: 250px;
+}
+.lib-div{
+  /* height: 170px; */
+  padding: 16px 20px;
+  /* margin-left: 0; */
 }
 .lib-parent {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 200px;
+  height: 150px;
   overflow: auto;
-  margin-left: 0;
+  margin: 0;
+  padding: auto;
 }
 
 .flex-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 35px;
+  /* margin-left: -5px; */
 }
 
 .flex-top img {
@@ -413,6 +438,7 @@ a {
   flex: 0.31;
   flex-direction: column;
   margin-right: 0.5rem;
+  height: 587px;
   
 }
 /* .perpetual::-webkit-scrollbar 
@@ -483,7 +509,9 @@ a {
 .sidebar .policies ul li a:hover {
   text-decoration: underline;
 }
-
+.kh {
+  color: white;
+}
 /* .main-container {
     margin-left: 350px;
     margin-bottom: 100px;
@@ -493,12 +521,12 @@ a {
   flex-direction: column;
   flex: 0.75;
   /* Adjust as needed */
-  margin-left: 0.5rem;
+  /* margin-left: 0.5rem; */
   /* Adjust as needed */
   margin-bottom: 100px;
 
   width: 100%;
-  height: 500px;
+  height: 490px;
   overflow: auto;
   /* Occupy the full height of the container */
 }
@@ -569,8 +597,21 @@ a {
 
 .spotify-playlists {
   padding: 20px 40px;
-}
+  margin: 0;
+  /* background-color: red; */
+  /* background-image: linear-gradient(rgba(0,0,0,.6) 0; */
+  /* background-image: linear-gradient(rgba(0,0,0,.6) ); */
+  /* background-image: linear-gradient(rgba(155, 152, 152, 0.6), /* Starting color */
+  /* Additional color stops go here if needed */
+  /* rgba(36, 34, 34, 0) Ending color); */ */
 
+}
+.kaha{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  
+}
 .spotify-playlists h2 {
   color: #ffffff;
   font-size: 22px;
