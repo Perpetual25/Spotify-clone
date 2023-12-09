@@ -55,7 +55,7 @@ a {
 .top-icons {
   display: flex;
   flex-direction: column;
-  flex: 1.2;
+  flex: 0.8;
   gap: 1.5rem;
   padding: 1rem 1.5rem;
   margin-bottom: 0.5rem;
@@ -606,7 +606,16 @@ a {
   opacity: 0;
   transition: all ease 0.4s;
 }
+.parent12{
+  display: flex;
+  flex-direction: column;
+}
 
+.first_list{
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
 .spotify-playlists .list .item:hover .play .fa {
   opacity: 1;
   transform: translateY(-20px);
