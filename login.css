@@ -5,7 +5,7 @@
 }
 
 body{
-    background: #000;
+    background: #131212;
     font-family: 'Montserrat', sans-serif;
 
 }
@@ -14,6 +14,7 @@ body{
 
 header{
     padding: 20px 0 20px 50px;
+    background: #000;
 }
 
 
@@ -25,17 +26,20 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 10rem;
 }
 
 .lg{
-    border: 2px solid red;
+    margin-bottom: 20px;
 }
 
 /*--The main styling---*/
 
 .main{
-    margin: 30px;
-    width: 700px;
+    margin-top: 30px;
+    margin-left: 100px;
+    padding: 40px;
+    width: 800px;
     background: #000;
     border-radius: 5px;
 }
@@ -44,21 +48,21 @@ section{
     color: white;
     text-align: center;
     margin-left: 0;
-    margin-right: 10rem;
-    margin-bottom: 10px;
-    font-size: 30px;
+    padding-top: 10px;
+    font-size: 40px;
 }
 
-/*--- contine with Google facebook and apple container ---*/
+/*--- continue with Google facebook and apple container ---*/
  .gfa{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-left: 3rem;
 }
 
 .gfa button{
-    width: 450PX;
+    width: 324PX;
     font-size: 15px;
     font-weight: bold;
     text-align: center;
@@ -67,10 +71,14 @@ section{
     outline: none;
     margin: 5px 0;
     border-radius: 500px;
-    color: white;
+    color: rgb(206, 201, 201);
     background: transparent;
-    border: 1px solid rgb(54, 52, 52);
+    border: 1px solid rgb(150, 148, 148);
 
+}
+
+.gfa button:hover{
+    border: 1.5px solid white;
 }
 
 .gfa button img{
@@ -83,9 +91,12 @@ section{
     top: 3px;
 
 }
+#a img{
+    width: 22px;
+}
 
 .main hr{
-    margin: 35px 100px;
+    margin: 50px 50px;
     border-image: initial;
     border-top: 1px solid rgb(41, 41, 41);
     border-left: none;
@@ -100,6 +111,8 @@ section{
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    border: 1px solid red;
+
 }
 
 
@@ -108,22 +121,31 @@ section{
     font-size: 14px;
     margin-bottom: 8px;
     display: inline-block;
+
 }
 
 
 .login form input{
     display: block;
     padding: 14px;
-    width: 450px;
+    width: 324px;
     margin-bottom: 15px;
     font-size: 15px;
     font-weight: 500;
     background: #141313;
     border: none;
     outline: none;
+    appearance: none;
     border-radius: 4px;
-    /* box-shadow: inherit; */
+    box-shadow: inset 0 0 0 1px #4b4a4a;
+    color: white;
 }
+
+.login form input:hover{
+    border: 1.5px solid white;
+}
+
+
 
 .switch{
     margin: 0;
@@ -172,13 +194,20 @@ section{
 
 .login button{
     background-color: #1ed760;
-    height: 40px;
-    width: 450px;
+    height: 50px;
+    width: 324px;
     border-radius: 30px;
+    border: none;
     font-weight: bold;
     font-size: 16px;
     padding: 8px 32px;
-    margin: 20px 0;
+    margin: 20px;
+    transition: width 0.3s ease-in-out;
+
+}
+
+.login button a:hover{
+    width: 330px;
 }
 
 .login a{
@@ -189,20 +218,45 @@ section{
     text-decoration: underline;
 }
 
+.login a:hover{
+    color: #1ed760;
+}
+
 /** Last part***/
 .last{
-    margin: 10px 0;
-    text-align: center;
+    /* margin: 10px 0;
+    text-align: center; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    padding: 20px;
 }
 
 .last div{
     color: #575050;
-    margin-right: 3px;
-    margin: 10px;
+    padding-right: 10px;
 }
 
 .last a{
     color: white;
     text-decoration: underline;
 
+}
+
+.last a:hover{
+    color: #1ed760;
+}
+
+
+footer p{
+    color: #575050;
+    font-size: 15px;
+    padding-right: 60px;
+
+}
+
+footer p a{
+    color: white;
 }
