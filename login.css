@@ -264,12 +264,6 @@ footer a {
 
 
 @media screen and (max-width: 768px) {
-  body {
-    background: #131212;
-    font-family: "Montserrat", sans-serif;
-  }
-
-
   header {
     padding: 50px;
   }
@@ -281,6 +275,7 @@ footer a {
   
 
   section {
+    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
