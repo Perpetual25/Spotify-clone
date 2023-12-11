@@ -714,7 +714,7 @@ a {
 .topbar {
   display: flex;
   justify-content: space-between;
-  /* background-color: #000; */
+  /* background-color */
   padding: 14px 30px;
   gap: 100px;
 }
