@@ -207,6 +207,7 @@ section {
 
 .login button:hover {
   width: 340px;
+  height: 55px;
 }
 
 .login a {
@@ -219,7 +220,7 @@ section {
 #forgot-password a {
   color: #ffffff;
   text-decoration: underline;
-  margin-top: 30px;
+  margin-top: 40px;
   font-weight: 500;
 }
 
