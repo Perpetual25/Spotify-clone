@@ -32,6 +32,7 @@ a {
 /*container that hold the aside, main and the footer*/
 .container {
   display: flex;
+  flex-direction: column;
   /* flex: 1; */
   overflow: hidden;
   background-color: var(--black);
@@ -54,7 +55,7 @@ a {
 .top-icons {
   display: flex;
   flex-direction: column;
-  flex: 0.57;
+  flex: 0.6;
   gap: 1.5rem;
   padding: 1rem 1.5rem;
   margin-bottom: 0.5rem;
@@ -100,7 +101,7 @@ a {
   display: flex;
   flex-direction: column;
   /* align-items:flex-start; */
-  flex: 2;
+  flex: 3;
   overflow-y: auto;
   background-color: var(--grey);
   padding: 0.7rem 1.5rem;
@@ -113,9 +114,9 @@ a {
 .first_list{
   display: flex;
   list-style: none;
-font-size: 0.6875rem;
+font-size: 9px;
 font-weight: 400;
-  gap: 24px;
+  gap: 18px;
   color: #cfbfbf;
 }
 .tooltip .tooltiptext {
@@ -160,6 +161,121 @@ font-weight: 400;
   border-radius: 5px;
   padding: 10px;
   height: 250px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: var(--grey);
+  color: aliceblue;
+  font-size: 30px;
+  width: 100%;
+  border-radius: 0.5px;
+  height: 100%;
+  margin-top: 2px;
+
+}
+
+ul {
+  list-style: none;
+  margin-left: 2px;
+}
+
+.first {
+  color: white;
+  font-size: 18px;
+}
+
+ul li a {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.item2 li a,
+.item3 li a,
+.item4 li a {
+  color: grey;
+  font-size: 15px;
+  margin-left: 0px;
+  /* You can adjust the size as needed */
+}
+
+.item5 ul {
+  list-style: none;
+  padding: 0;
+  margin: 10;
+  text-align: right;
+  /* Align list items to the right */
+}
+
+.item5 img {
+  width: 40px;
+}
+
+.item5 ul li {
+  display: inline-block;
+  margin: 2px;
+}
+
+.item5 ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 50%;
+  /* Make the button circular */
+  background-color: #212121;
+  /* Light grey background color */
+  transition: background-color 0.3s ease;
+  /* Add transition for a smooth effect */
+}
+
+.item5 ul li a:hover {
+  background-color: #ccc;
+  /* Change background color on hover */
+  color: #000;
+  /* Change text color on hover */
+}
+
+.item5 ul li img {
+  width: 20px;
+  /* Adjust image size as needed */
+  height: auto;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .item5 img {
+      width: 30px;
+
+  }
+
+  .first {
+      font-size: 16px;
+  }
+
+}
+.item6 p{
+  color: rgb(248, 243, 243);
+  padding: 0px;
+}
+hr{
+height: 1px; /* Adjust the height as needed */
+border: none; /* Remove the default border */
+background-color: #ccc; /* Set the background color of the line */
+}
+
+
+
+ul li a {
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
 }
 .lib-div{
   /* height: 170px; */
@@ -267,7 +383,7 @@ font-weight: 400;
   flex-direction: column;
   padding: 0rem 1rem;
   border-radius: 0.5rem;
-  padding-bottom: 6rem;
+  margin-bottom: 6rem;
   width: 50%;
 }
 
@@ -304,8 +420,9 @@ font-weight: 400;
   flex-direction: column;
   padding: 0rem 1rem;
   border-radius: 0.5rem;
-  padding-bottom: 6rem;
-  width: 50%;
+  padding-bottom: 3rem;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 /* Example for responsive content inside .main-container */
@@ -331,6 +448,7 @@ font-weight: 400;
   /* Change to sticky */
   top: 0;
   /* Specify the distance from the top */
+  width: 100%;
 }
 
 .topbar .prev-next-buttons button {
@@ -466,13 +584,14 @@ font-weight: 400;
   box-sizing: border-box;
 }
 
-body {
+body , html{
   background-color: #121212;
   font-family: "Montserrat", sans-serif;
   width: 100%;
-  min-width: 800px;
-  min-height: 600px;
   height: 100%;
+  margin: 0rem;
+  overflow: hidden;
+  display: flex;
   line-height: normal;
 }
 
@@ -483,13 +602,14 @@ a {
 }
 
 .sidebar {
+    min-width: 100%;
   flex: 0.25;
   overflow-y: auto;
   display: flex;
   flex: 0.31;
   flex-direction: column;
-  margin-right: 0.5rem;
-  height: 595px;
+  margin-right: 0;
+  height: 100%;
   
   
 }
@@ -579,7 +699,7 @@ a {
   margin-bottom: 100px;
 
   width: 50%;
-  height: 597px;
+  height: 100%;
 
   /* overflow: auto; */
 
@@ -596,6 +716,17 @@ a {
   justify-content: space-between;
   /* background-color: #000; */
   padding: 14px 30px;
+  gap: 100px;
+}
+.logo img{
+  cursor: pointer;
+ 
+    height: 1.5rem;
+  width: 2px;
+}
+logo:hover{
+  opacity: 1;
+  transition: all 0.3s;
 }
 
 .topbar .prev-next-buttons button {
@@ -612,7 +743,8 @@ a {
 
 .topbar .navbar {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+   align-items: center;
 }
 
 .topbar .navbar ul {
@@ -659,6 +791,8 @@ a {
   /* padding: 20px 40px; */
   margin: 0;
   width: 100%;
+  
+
   /* display: flex;
   flex-direction: column;
   flex: 0.8;
@@ -946,3 +1080,110 @@ a {
   background: transparent;
   /* Make scrollbar handle transparent */
 }
+/* Your existing CSS */
+
+/* Mobile-first styles */
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0rem;
+  overflow: hidden;
+  font-family: "Nunito", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--black);
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.sidebar {
+  flex: 1;
+  min-width: 100%;
+  margin-right: 0;
+}
+
+.top-icons {
+  flex: 1;
+}
+
+.topbar,
+.main-container {
+  width: 100%;
+}
+
+.main-container {
+  padding-bottom: 3rem;
+}
+
+/* Responsive Media Queries */
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    flex: 0.2;
+    min-width: 325px;
+    margin-right: 0.5rem;
+  }
+
+  .topbar,
+  .main-container {
+    width: calc(100% - 325px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    flex: 0.2;
+    min-width: 325px;
+    margin-right: 0.5rem;
+  }
+
+  .topbar,
+  .main-container {
+    width: calc(100% - 325px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    flex: 0.2;
+    min-width: 325px;
+    margin-right: 0.5rem;
+  }
+
+  .topbar,
+  .main-container {
+    width: calc(100% - 325px);
+  }
+}
+
+/* Add more media queries as needed for larger screens */
+
+.main-container {
+    width: 100%;
+    max-width: 100%; /* Allow it to occupy the full width on smaller screens */
+  }
+  
+  /* Optional: Adjust the width further for smaller screens if needed */
+  @media only screen and (max-width: 600px) {
+    .main-container {
+      width: 100%; /* Adjust as needed for smaller screens */
+    }
+  }
