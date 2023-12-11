@@ -257,3 +257,56 @@ footer {
 footer a {
   color: rgb(184, 184, 184);
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  body {
+    background: #131212;
+    font-family: "Montserrat", sans-serif;
+  }
+
+
+  header {
+    padding: 50px;
+  }
+  
+
+  .logo img {
+    width: 10px;
+  }
+  
+
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lg {
+    border: 1px solid blue;
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  
+
+  .main {
+    margin-top: 30px;
+    margin-left: 100px;
+    padding: 40px;
+    width: 900px;
+    border-radius: 5px;
+  }
+  
+  
+  
+
+
+  
+
+  
+}
