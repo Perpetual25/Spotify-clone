@@ -1,100 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Spotify Login Page</title>
-  <!-- <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Login Page</title>
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     /> -->
 
-  <link rel="stylesheet" href="./login.css" />
-  <link rel="icon" href="./assets/spotify.svg" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="icon" href="./assets/spotify.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  <!-------This part contains the header-->
-  <header>
-    <div class="logo">
-      <img style="width: 120px;"
-        src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Logo">
-    </div>
-  </header>
-
-  <section>
-
-    <div class="main">
-      <div class="lg">
-        <h1>Log in to Spotify</h1>
+  <body>
+    <!-------This part contains the header-->
+    <header>
+      <div class="logo">
+        <img
+          style="width: 110px"
+          src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png"
+          alt="Logo"
+        />
       </div>
+    </header>
 
-      <div class="gfa">
-        <button class="a-c-btn" id="g">
-          <a href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-            target="_blank">
-            <img src="./assets/google.svg" /><span>Continue with Google</span>
-          </a>
-        </button>
-        <button class="a-c-btn" id="f">
-          <a href="https://www.facebook.com/login.php" target="_blank">
+    <section>
+      <div class="main">
+        <div class="lg">
+          <h1>Log in to Spotify</h1>
+        </div>
 
-            <img src="./assets/facebook.svg" /><span>Continue with Facebook</span></a>
-        </button>
-        <button class="a-c-btn" id="a">
-          <a href="!#">
-            <img src="./loginassets/apple.svg" /><span>Continue with Apple</span>
-          </a>
-        </button>
-        <button class="a-c-btn" id="phone">
-          <a href="!#"><span>Continue with phone number</span> </a></button>
+        <div class="gfa">
+          <button class="a-c-btn" id="g">
+            <a
+              href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+              target="_blank"
+            >
+              <img src="./assets/google.svg" /><span>Continue with Google</span>
+            </a>
+          </button>
+          <button class="a-c-btn" id="f">
+            <a href="https://www.facebook.com/login.php" target="_blank">
+              <img src="./assets/facebook.svg" /><span
+                >Continue with Facebook</span
+              ></a
+            >
+          </button>
+          <button class="a-c-btn" id="a">
+            <a href="!#">
+              <img src="./loginassets/apple.svg" /><span
+                >Continue with Apple</span
+              >
+            </a>
+          </button>
+          <button class="a-c-btn" id="phone">
+            <a href="!#"><span>Continue with phone number</span> </a>
+          </button>
+        </div>
 
+        <hr />
+
+        <div class="login">
+          <form>
+            <label>Email or username</label>
+            <input type="text" placeholder="Email or Username" />
+
+            <label>Password</label>
+            <input type="text" placeholder="Password" />
+
+            <div class="switch">
+              <input type="checkbox" id="switch" checked />
+              <label for="switch" class="custom-checkbox"></label>
+              <span>Remember me</span>
+            </div>
+            <div class="in">
+              <button>
+                <a href="./havu/Spotify clone/index.html">Log in</a>
+              </button>
+            </div>
+            <div id="forgot-password">
+              <a href="!#">Forgot your Password?</a>
+            </div>
+          </form>
+        </div>
+        <hr class="sec-hr" />
+        <div class="last">
+          <div>Don't have an account?</div>
+          <a href="./signup.html" target="_blank">Sign up for spotify</a>
+        </div>
+
+        <footer>
+          <small>
+            This site is protected by reCAPTCHA and the Google
+            <a href="#" > Privacy Policy </a> and
+            <a href="#"> Terms of Service </a> apply.
+          </small>
+        </footer>
       </div>
-
-      <hr />
-
-      <div class="login">
-        <form>
-          <label>Email or username</label>
-          <input type="text" placeholder="Email or Username" />
-
-          <label>Password</label>
-          <input type="text" placeholder="Password" />
-
-          <div class="switch">
-            <input type="checkbox" id="switch" checked />
-            <label for="switch" class="custom-checkbox"></label>
-            <span>Remember me</span>
-          </div>
-          <div class="in">
-            <button><a href="#">Log in</a></button>
-          </div>
-          <div id="forgot-password">
-            <a href="!#">Forgot your Password?</a>
-          </div>
-        </form>
-      </div>
-      <hr />
-      <div class="last">
-        <div>Don't have an account?</div>
-        <a href="./signup.html" target="_blank">Sign up for spotify</a>
-      </div>
-
-      <footer>
-        <small>
-          This site is protected by reCAPTCHA and the Google
-          <a href="#"> Privacy Policy </a> and
-          <a href="#"> Terms of Service </a> apply.
-        </small>
-      </footer>
-    </div>
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>
