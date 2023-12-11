@@ -1,0 +1,1189 @@
+/* root the variable that hold the colors*/
+:root {
+  --black: #000;
+  /*the backgroud of the 3 div is black*/
+  --grey: #121212;
+  --light-grey: #232323;
+  /* the 3 containers are gray*/
+  --white: #fff;
+}
+
+/*to give body general styling, and prevent the overflow in the html*/
+/*to make the sidebar and the main-container have thier own srcoll*/
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0rem;
+  overflow: hidden;
+  display: flex;
+  /* flex-direction: column; */
+  font-family: "Nunito", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/*to give a styling for every anchor tag*/
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/*container that hold the aside, main and the footer*/
+.container {
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+  overflow: hidden;
+  background-color: var(--black);
+  padding: 0.5rem;
+  width: 100%;
+}
+
+/*the sidebar container as general and it containe 2 div in side it*/
+.sidebar {
+  flex: 0.2;
+  min-width: 325px;
+  /* Set a minimum width */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.5rem;
+}
+
+/*container for the home and search icons..the top conatiner on the side bar*/
+.top-icons {
+  display: flex;
+  flex-direction: column;
+  flex: 0.6;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--grey);
+  border-radius: 0.5rem;
+  
+}
+
+
+/*the same class name for the home and search icons*/
+.link-flex {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  align-items: center;
+  opacity: 0.7;
+  font-weight: 700;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.link-flex:hover {
+  opacity: 1;
+  transition: all 0.3s;
+  
+}
+
+/*the icons are embeded as img*/
+.link-flex img {
+  height: 1.2rem;
+  width: 1.2rem;
+  color: white;
+}
+
+.link-flex p {
+  font-size: 12rem;
+  padding-top: 10px;
+  color: var(--white);
+}
+
+.library {
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items:flex-start; */
+  flex: 3;
+  overflow-y: auto;
+  background-color: var(--grey);
+  padding: 0.7rem 1.5rem;
+}
+.parent{
+  display: flex;
+  flex-direction: column;
+}
+
+.first_list{
+  display: flex;
+  list-style: none;
+font-size: 9px;
+font-weight: 400;
+  gap: 18px;
+  color: #cfbfbf;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+
+  /* Position the tooltip */
+  position: fixed;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.lib-button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 18px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-left: 20px;
+  width: 190px;
+  height: 40px;
+  /* transition: 1s; */
+}
+.lib-button :hover {
+  background-color: #fff;
+  width: 200px;
+}
+.play-div {
+  background-color: var(--light-grey);
+  margin: 10px 0;
+  margin-left: 0;
+  border-radius: 5px;
+  padding: 10px;
+  height: 250px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: var(--grey);
+  color: aliceblue;
+  font-size: 30px;
+  width: 100%;
+  border-radius: 0.5px;
+  height: 100%;
+  margin-top: 2px;
+
+}
+
+ul {
+  list-style: none;
+  margin-left: 2px;
+}
+
+.first {
+  color: white;
+  font-size: 18px;
+}
+
+ul li a {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.item2 li a,
+.item3 li a,
+.item4 li a {
+  color: grey;
+  font-size: 15px;
+  margin-left: 0px;
+  /* You can adjust the size as needed */
+}
+
+.item5 ul {
+  list-style: none;
+  padding: 0;
+  margin: 10;
+  text-align: right;
+  /* Align list items to the right */
+}
+
+.item5 img {
+  width: 40px;
+}
+
+.item5 ul li {
+  display: inline-block;
+  margin: 2px;
+}
+
+.item5 ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 50%;
+  /* Make the button circular */
+  background-color: #212121;
+  /* Light grey background color */
+  transition: background-color 0.3s ease;
+  /* Add transition for a smooth effect */
+}
+
+.item5 ul li a:hover {
+  background-color: #ccc;
+  /* Change background color on hover */
+  color: #000;
+  /* Change text color on hover */
+}
+
+.item5 ul li img {
+  width: 20px;
+  /* Adjust image size as needed */
+  height: auto;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .item5 img {
+      width: 30px;
+
+  }
+
+  .first {
+      font-size: 16px;
+  }
+
+}
+.item6 p{
+  color: rgb(248, 243, 243);
+  padding: 0px;
+}
+hr{
+height: 1px; /* Adjust the height as needed */
+border: none; /* Remove the default border */
+background-color: #ccc; /* Set the background color of the line */
+}
+
+
+
+ul li a {
+  color: white;
+  font-size: 10px;
+  text-decoration: none;
+}
+.lib-div{
+  /* height: 170px; */
+  padding: 16px 20px;
+  /* margin-left: 0; */
+}
+.lib-parent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150px;
+  overflow:scroll;
+  margin: 0;
+  padding: auto;
+  scrollbar-track-color:rgb(223, 219, 219) ;
+  padding-right: 0;
+
+}
+
+.language-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px; /* Adjust padding */
+  border: 0.5px solid white;
+  border-radius: 999px; /* Large value for a circle */
+  background: transparent;
+  /* transition: transform 0.3s ease, font-weight 0.3s ease, border-width 0.3s ease; */
+  cursor: pointer;
+  outline: none;
+  font-family: Arial, sans-serif;
+  color: white;
+  font-size: 12px;
+  font-weight: normal;
+  max-width: max-content; /* Allows the button to shrink-wrap its content */
+}
+
+.language-button:hover {
+  transform: scale(1.05);
+  font-weight: bold;
+  border-width: 1px;
+}
+
+.language-logo {
+  width: 20px;
+  height: 18px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.language-text {
+  display: inline-block;
+  max-width: calc(100% - 28px); /* Adjust according to your logo and spacing */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.flex-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+  /* margin-left: -5px; */
+}
+
+.flex-top img {
+  height: 1rem;
+  width: 1rem;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
+.flex-top p {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.flex-top p:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.flex-top img:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.chip {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--light-grey);
+  border-radius: 5rem;
+  width: fit-content;
+  font-weight: normal;
+  color: var(--white);
+}
+
+.main-content {
+  flex: 0.8;
+  overflow-y: auto;
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 6rem;
+  width: 50%;
+}
+
+.album-flex {
+  margin-bottom: 1rem !important;
+}
+
+.albums {
+  margin-top: 1rem;
+}
+
+.album-cover {
+  height: 3rem !important;
+  width: 3rem !important;
+  border-radius: 0.2rem;
+}
+
+.main-container {
+  /* flex: 0.8;
+  min-width: 700px;
+  /* Set a minimum width */
+  /* width: 100%;
+  /* Ensure it occupies available width */
+  /* max-width: 100%; */
+  /* Limit the maximum width */
+  /* margin-left: 350px;
+  margin-bottom: 100px;
+  overflow-x: auto; */
+  /*Enable horizontal scrolling */
+  flex: 0.8;
+  overflow-y: auto;
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1rem;
+  border-radius: 0.5rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Example for responsive content inside .main-container */
+.item {
+  width: 90%;
+  /* Use percentages for width */
+  max-width: 300px;
+  /* Limit the maximum width if needed */
+  /* ... Other styles */
+}
+
+.topbar {
+  box-sizing: border-box;
+  /* Include padding and border in the element's total width */
+  width: 100%;
+  /* Adjust this width as needed */
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #000; */
+  padding: 0px 30px;
+  position: sticky;
+
+  /* Change to sticky */
+  top: 0;
+  /* Specify the distance from the top */
+  width: 100%;
+}
+
+.topbar .prev-next-buttons button {
+  color: #7a7a7a;
+  cursor: not-allowed;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  font-size: 18px;
+  border: 0px;
+  background-color: #090909;
+  margin-right: 10px;
+}
+
+.topbar .navbar {
+  display: flex;
+  align-items: center;
+  width: 15%;
+}
+
+.topbar .navbar ul {
+  list-style: none;
+  margin-left: -50px; /* Adjust the margin-left value as needed */
+}
+
+.topbar .navbar ul li {
+  display: inline-block;
+  margin: 0px 8px;
+  width: 70px;
+}
+
+.topbar .navbar ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.topbar .navbar ul li a:hover {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.topbar .navbar button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.topbar .navbar button:hover {
+  background-color: #f2f2f2;
+}
+
+.col-flex p {
+  margin: 0;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+.album-name {
+  color: var(--white);
+  margin-bottom: 0.35rem !important;
+  font-size: 1rem !important;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 0rem;
+  align-items: center;
+  background-color: transparent;
+  background-color: var(--grey);
+  z-index: 1000;
+  /* Other styles as needed
+  }
+  
+  .cards-container {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    /* Other styles as needed */
+}
+
+.card {
+  width: 150px;
+  background-color: var(--light-grey);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  height: fit-content;
+  margin: 0rem 0.75rem;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 0.35rem;
+}
+
+.card-name {
+  margin: 0.25rem 0;
+}
+
+.card-description {
+  margin: 0;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+*/ .preview {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body , html{
+  background-color: #121212;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0rem;
+  overflow: hidden;
+  display: flex;
+  line-height: normal;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.sidebar {
+    min-width: 100%;
+  flex: 0.25;
+  overflow-y: auto;
+  display: flex;
+  flex: 0.31;
+  flex-direction: column;
+  margin-right: 0;
+  height: 100%;
+  
+  
+}
+/* .perpetual::-webkit-scrollbar 
+{   width: 8px; } 
+.perpetual::-webkit-scrollbar-thumb 
+{   background-color: #888;   
+    border-radius: 4px; } */
+
+/* .sidebar {
+    position: fixed;
+    width: 300px;
+    background-color: #000000;
+    padding: 24px;
+} */
+
+.sidebar .logo img {
+  width: 130px;
+}
+
+.sidebar .navigation ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.sidebar .navigation ul li {
+  padding: 10px 0px;
+}
+
+.sidebar .navigation ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.sidebar .navigation ul li .fa {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.sidebar .navigation ul li a:hover {
+  color: #ffffff;
+}
+
+.sidebar .policies {
+  position: absolute;
+  bottom: 100px;
+}
+
+.sidebar .policies ul {
+  list-style: none;
+}
+
+.sidebar .policies ul li {
+  padding-bottom: 5px;
+}
+
+.sidebar .policies ul li a {
+  color: #b3b3b3;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.sidebar .policies ul li a:hover {
+  text-decoration: underline;
+}
+.kh {
+  color: white;
+}
+/* .main-container {
+    margin-left: 350px;
+    margin-bottom: 100px;
+} */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex: 0.8;
+  overflow-x: auto;
+  padding: 0rem 1rem;
+  border-radius: 0.5rem;
+  padding-bottom: 6rem;
+  /* Adjust as needed */
+  /* margin-left: 0.5rem; */
+  /* Adjust as needed */
+  margin-bottom: 100px;
+
+  width: 50%;
+  height: 100%;
+
+  /* overflow: auto; */
+
+  /* Occupy the full height of the container */
+}
+.spo:hover{
+  text-decoration: underline;
+  font-size: medium;
+
+  cursor: pointer;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  /* background-color */
+  padding: 14px 30px;
+  gap: 100px;
+}
+.logo img{
+  cursor: pointer;
+ 
+    height: 1.5rem;
+  width: 2px;
+}
+logo:hover{
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.topbar .prev-next-buttons button {
+  color: #7a7a7a;
+  cursor: not-allowed;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  font-size: 18px;
+  border: 0px;
+  background-color: #090909;
+  margin-right: 10px;
+}
+
+.topbar .navbar {
+  display: flex;
+  align-items: flex-end;
+   align-items: center;
+}
+
+.topbar .navbar ul {
+  list-style: none;
+}
+
+.topbar .navbar ul li {
+  display: inline-block;
+  margin: 0px 8px;
+  width: 70px;
+}
+
+.topbar .navbar ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.topbar .navbar ul li a:hover {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.topbar .navbar button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.topbar .navbar button:hover {
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+
+.spotify-playlists {
+  /* padding: 20px 40px; */
+  margin: 0;
+  width: 100%;
+  
+
+  /* display: flex;
+  flex-direction: column;
+  flex: 0.8;
+  overflow-y: auto;
+  padding: 0rem 1rem;
+  border-radius: 0.5rem;
+  padding-bottom: 6rem;
+  margin-bottom: 100px;
+
+  width: 50%;
+  height: 597px; */
+  
+
+}
+.kaha{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+.btn-link {
+  display: inline-block;
+  padding: 0;
+  font-size: inherit;
+  color: var(--fgColor-accent, var(--color-accent-fg));
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.spotify-playlists h2 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.spotify-playlists h2:hover{
+  text-decoration: underline;
+}
+.spotify-playlists .list {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.spotify-playlists .list .item {
+  min-width: 140px;
+  width: 160px;
+  padding: 15px;
+  background-color: #181818;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+
+.spotify-playlists .list .item:hover {
+  background-color: #252525;
+}
+
+.spotify-playlists .list .item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.spotify-playlists .list .item .play {
+  position: relative;
+}
+
+.spotify-playlists .list .item .play .fa {
+  position: absolute;
+  right: 10px;
+  top: -60px;
+  padding: 18px;
+  background-color: #1db954;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+.parent12{
+  display: flex;
+  flex-direction: column;
+}
+
+.first_list{
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+.spotify-playlists .list .item:hover .play .fa {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.spotify-playlists .list .item h4 {
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spotify-playlists .list .item p {
+  color: #989898;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.spotify-playlists hr {
+  margin: 70px 0px 0px;
+  border-color: #636363;
+}
+
+.preview {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.5px;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-top: 10px;
+}
+
+.preview h6 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.preview p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.preview button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.preview h6 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.preview p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.preview button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.player {
+  width: 100%;
+  height: 80px;
+  /* Adjust as needed */
+  position: fixed;
+  bottom: 0;
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.volume-controls {
+  width: 20vw;
+}
+
+.player-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+}
+
+/* .volume-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+} */
+
+.player-timeline {
+  display: flex;
+  align-items: center;
+}
+
+.timeline-slider {
+  margin: 0 10px;
+  width: 40vw;
+}
+
+.volume-slider {
+  width: 100px;
+  height: 4px;
+}
+
+.timeline-slider:hover,
+.volume-slider:hover {
+  background-color: #1bd760;
+}
+
+.timeline-slider,
+.volume-slider {
+  -webkit-appearance: none;
+}
+
+.timeline-slider::-webkit-slider-runnable-track,
+.volume-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  background: #ddd;
+  border: none;
+  border-radius: 100px;
+}
+
+.timeline-slider::-webkit-slider-thumb,
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #1bd760;
+  margin-top: -6px;
+}
+
+.timeline-slider:focus,
+.volume-slider:focus {
+  outline: none;
+}
+
+.timeline-slider:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+
+/* Track */
+::-webkit-scrollbar {
+  width: 0;
+  /* This will hide the scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  /* Make scrollbar handle transparent */
+}
+/* Your existing CSS */
+
+/* Mobile-first styles */
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0rem;
+  overflow: hidden;
+  font-family: "Nunito", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--black);
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.sidebar {
+  flex: 1;
+  min-width: 100%;
+  margin-right: 0;
+}
+
+.top-icons {
+  flex: 1;
+}
+
+.topbar,
+.main-container {
+  width: 100%;
+}
+
+.main-container {
+  padding-bottom: 3rem;
+}
+
+/* Responsive Media Queries */
+@media screen and (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    flex: 0.2;
+    min-width: 325px;
+    margin-right: 0.5rem;
+  }
+
+  .topbar,
+  .main-container {
+    width: calc(100% - 325px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    flex: 0.2;
+    min-width: 325px;
+    margin-right: 0.5rem;
+  }
+
+  .topbar,
+  .main-container {
+    width: calc(100% - 325px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    flex: 0.2;
+    min-width: 325px;
+    margin-right: 0.5rem;
+  }
+
+  .topbar,
+  .main-container {
+    width: calc(100% - 325px);
+  }
+}
+
+/* Add more media queries as needed for larger screens */
+
+.main-container {
+    width: 100%;
+    max-width: 100%; /* Allow it to occupy the full width on smaller screens */
+  }
+  
+  /* Optional: Adjust the width further for smaller screens if needed */
+  @media only screen and (max-width: 600px) {
+    .main-container {
+      width: 100%; /* Adjust as needed for smaller screens */
+    }
+  }
