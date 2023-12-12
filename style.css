@@ -526,8 +526,8 @@ ul li a {
   justify-content: space-between;
   padding: 0rem 0rem;
   align-items: center;
-  background-color: transparent;
-  background-color: var(--grey);
+  /* background-color: transparent; */
+  /* background-color: var(--grey); */
   z-index: 1000;
   /* Other styles as needed
   }
