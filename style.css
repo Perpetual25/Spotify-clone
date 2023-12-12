@@ -407,13 +407,7 @@ ul li a {
 }
 
 .main-container {
-  /* flex: 0.8;
-  min-width: 700px;
-  /* Set a minimum width */
-  /* width: 100%;
-  /* Ensure it occupies available width */
-  /* max-width: 100%; */
-  /*Enable horizontal scrolling */
+
   flex: 0.8;
   overflow-y: auto;
   background-color: var(--grey);
