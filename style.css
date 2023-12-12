@@ -28,7 +28,9 @@ a {
   color: var(--white);
   text-decoration: none;
 }
-
+#logo{
+  width: 80px; 
+}
 /*container that hold the aside, main and the footer*/
 .container {
   display: flex;
