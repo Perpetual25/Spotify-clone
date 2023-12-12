@@ -413,10 +413,6 @@ ul li a {
   /* width: 100%;
   /* Ensure it occupies available width */
   /* max-width: 100%; */
-  /* Limit the maximum width */
-  /* margin-left: 350px;
-  margin-bottom: 100px;
-  overflow-x: auto; */
   /*Enable horizontal scrolling */
   flex: 0.8;
   overflow-y: auto;
