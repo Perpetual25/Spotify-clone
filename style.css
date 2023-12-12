@@ -9,7 +9,7 @@
 }
 
 /*to give body general styling, and prevent the overflow in the html*/
-/*to make the sidebar and the main-container have thier own srcoll*/
+
 body,
 html {
   height: 100%;
