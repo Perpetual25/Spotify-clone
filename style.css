@@ -470,13 +470,14 @@ ul li a {
 
 .topbar .navbar {
   display: flex;
+  align-items: flex-end;
   align-items: center;
   width: 15%;
 }
 
 .topbar .navbar ul {
   list-style: none;
-  margin-left: -50px; /* Adjust the margin-left value as needed */
+  margin-left: 170px; /* Adjust the margin-left value as needed */
 }
 
 .topbar .navbar ul li {
@@ -489,8 +490,10 @@ ul li a {
   color: #b3b3b3;
   text-decoration: none;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 10px;
   letter-spacing: 1px;
+  box-sizing: 2px;
+  
 }
 
 .topbar .navbar ul li a:hover {
@@ -501,13 +504,13 @@ ul li a {
 .topbar .navbar button {
   background-color: #ffffff;
   color: #000000;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   padding: 14px 30px;
   border: 0px;
   border-radius: 40px;
   cursor: pointer;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .topbar .navbar button:hover {
@@ -1190,5 +1193,46 @@ html {
   @media only screen and (max-width: 600px) {
     .main-container {
       width: 100%; /* Adjust as needed for smaller screens */
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .container {
+      flex-direction: row;
+    }
+  
+    .sidebar {
+      flex: 0.2;
+      min-width: 325px;
+      margin-right: 0.5rem;
+    }
+  
+    .top-icons {
+      display: flex;
+      flex: 0.6;
+      gap: 1.5rem;
+      padding: 1rem;
+      margin-bottom: 0.5rem;
+      background-color: var(--grey);
+      border-radius: 0.5rem;
+    }
+  
+    .topbar,
+    .main-container {
+      display: flex; /* Display topbar and main container on larger screens */
+      width: calc(100% - 325px);
+    }
+  }
+  
+  /* Add more media queries as needed for larger screens */
+  
+  /* iPhone 12 Pro specific styles */
+  @media only screen and (min-device-width: 428px) and (max-device-width: 926px) and (-webkit-min-device-pixel-ratio: 3) {
+    .sidebar {
+      display: block;
+    }
+  
+    .topbar,
+    .main-container {
+      display: none;
     }
   }
