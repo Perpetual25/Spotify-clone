@@ -83,10 +83,11 @@ a {
   
 }
 
-/*the icons are embeded as img*/
+
 #logo{
   width: 80px; 
 }
+/*the icons are embeded as img*/
 .link-flex img {
    height: 1.2rem;
   width: 1.2rem;
